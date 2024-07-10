@@ -824,3 +824,75 @@ fieldset {
 .send-button:focus {
   background-color: #404bbf;
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin-left: 16px;
+    padding: 0;
+  }
+
+  .about-us-list {
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .about-us-item {
+    flex-basis: calc((100% - 72px) / 1);
+  }
+
+  .icon-box {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .advantages-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+
+  .advantages-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .our-team-list {
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .profession-item {
+    flex-basis: calc((100% - 72px) / 1);
+    width: 264px;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 1);
+    width: 288px;
+  }
+
+  .img-box {
+    width: 288px;
+    height: 280px;
+  }
+}
