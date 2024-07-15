@@ -1218,3 +1218,117 @@ fieldset {
     margin-left: 24px;
   }
 }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header .container {
+    align-items: flex-start;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  .contacts {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+  }
+
+  .section {
+    padding-top: 96px;
+    padding-bottom: 24px;
+  }
+
+  .icon-box {
+    display: none;
+  }
+
+  .about-us-list {
+    flex-wrap: wrap;
+  }
+
+  .about-us-item {
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  .advantages-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+
+  .advantages-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .section-our-team {
+    padding-top: 96px;
+    padding-bottom: 32px;
+  }
+
+  .our-team-title {
+    font-weight: 700;
+  }
+
+  .our-team-list {
+    flex-wrap: wrap;
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+
+  .profession-item {
+    flex-basis: calc((100% - 24px) / 2);
+    width: 264px;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-title {
+    font-weight: 700;
+  }
+
+  .portfolio-list {
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 108px;
+  }
+
+  .footer-info {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .social-links {
+    margin: 0;
+  }
+}
