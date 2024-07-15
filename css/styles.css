@@ -1222,6 +1222,12 @@ fieldset {
 @media (min-width: 321px) and (max-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 16px;
+    margin: 0;
+  }
+
+  .header {
+    width: 768px;
   }
 
   .header .container {
@@ -1240,9 +1246,14 @@ fieldset {
     letter-spacing: 0.04em;
   }
 
+  .section-main {
+    width: 768px;
+  }
+
   .section {
     padding-top: 96px;
     padding-bottom: 24px;
+    width: 768px;
   }
 
   .icon-box {
@@ -1277,6 +1288,7 @@ fieldset {
   .section-our-team {
     padding-top: 96px;
     padding-bottom: 32px;
+    width: 768px;
   }
 
   .our-team-title {
@@ -1298,6 +1310,7 @@ fieldset {
   .portfolio-section {
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 768px;
   }
 
   .portfolio-title {
@@ -1315,6 +1328,7 @@ fieldset {
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 768px;
   }
 
   .footer .container {
