@@ -44,8 +44,6 @@ fieldset {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header .container {
@@ -133,13 +131,13 @@ fieldset {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .title {
@@ -153,7 +151,6 @@ fieldset {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
-  height: 216px;
   width: 160px;
 }
 
@@ -217,7 +214,6 @@ fieldset {
   font-size: 36px;
   line-height: 1.11111;
   text-align: center;
-  width: 288px;
 }
 
 .advantages-text {
@@ -233,8 +229,8 @@ fieldset {
 
 .section-our-team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-our-team .container {
@@ -413,12 +409,13 @@ fieldset {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   gap: 72px;
@@ -429,9 +426,10 @@ fieldset {
 }
 
 .footer-info .logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
-  padding-left: 86px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .span-logo-footer {
@@ -442,7 +440,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 40px;
 }
 
 .social-links-list {
@@ -600,7 +597,7 @@ fieldset {
   padding-top: 72px;
   padding-bottom: 24px;
   width: 288px;
-  transform: translate(-57.5%, -57.5%);
+  transform: translate(-50%, -50%);
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -750,6 +747,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .visually-hidden:checked + .checkbox-label .icon-accept-border {
@@ -764,6 +762,8 @@ fieldset {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 
 .privacy-policy {
@@ -771,7 +771,6 @@ fieldset {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  margin-left: 24px;
 }
 
 .send-button {
@@ -802,7 +801,7 @@ fieldset {
 }
 
 .mobile-overlay {
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -831,6 +830,7 @@ fieldset {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 24px;
   padding-left: 16px;
+  padding-bottom: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -871,11 +871,14 @@ fieldset {
   fill: #fff;
 }
 
+.mobile-nav {
+  margin-bottom: auto;
+}
+
 .mobile-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 
 .mobile-item-one {
@@ -908,6 +911,17 @@ fieldset {
   gap: 24px;
 }
 
+.mobile-contacts-one {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobile-contacts {
   font-weight: 500;
   font-size: 20px;
@@ -920,7 +934,9 @@ fieldset {
 }
 
 .mobile-contacts:hover,
-.mobile-contacts:focus {
+.mobile-contacts:focus,
+.mobile-contacts-one:hover,
+.mobile-contacts-one:focus {
   color: #404bbf;
 }
 
@@ -1076,12 +1092,7 @@ fieldset {
     font-size: 56px;
     line-height: 1.07143;
     width: 496px;
-    height: 120px;
-  }
-
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    margin-bottom: 36px;
   }
 
   .about-us-list {
@@ -1101,11 +1112,6 @@ fieldset {
     width: 356px;
   }
 
-  .section-our-team {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
   .section-our-team .container {
     padding-left: 108px;
     padding-right: 108px;
@@ -1113,15 +1119,11 @@ fieldset {
 
   .our-team-list {
     gap: 24px;
+    row-gap: 64px;
   }
 
   .profession-item {
     flex-basis: calc((100% - 24px) / 2);
-  }
-
-  .portfolio-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
 
   .portfolio-list {
@@ -1133,25 +1135,19 @@ fieldset {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .footer {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 108px;
     column-gap: 24px;
+    align-items: baseline;
   }
 
   .footer-info .logo {
-    margin-right: 0;
-    padding-left: 0;
+    text-align: start;
   }
 
   .social-links {
-    padding-left: 0;
     align-items: flex-start;
   }
 
@@ -1166,7 +1162,6 @@ fieldset {
   .modal {
     width: 408px;
     height: 623px;
-    transform: translate(-50%, -50%);
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -1179,21 +1174,21 @@ fieldset {
     margin-left: 96px;
   }
 
-  .privacy-policy {
-    margin-left: 0;
+  .mobile-overlay {
+    display: none;
   }
-}
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-main {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/office.pl@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-main {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office.pl@2x.jpg);
+    }
   }
 }
 
@@ -1302,8 +1297,12 @@ fieldset {
   .title {
     font-size: 56px;
     line-height: 1.07;
-    height: 120px;
     width: 496px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .about-us-list {
@@ -1347,6 +1346,16 @@ fieldset {
     font-weight: 400;
   }
 
+  .section-our-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section-our-team .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .our-team-list {
     gap: 24px;
     flex-wrap: nowrap;
@@ -1354,6 +1363,11 @@ fieldset {
 
   .profession-item {
     flex-basis: calc((100% - 72px) / 3);
+  }
+
+  .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .portfolio-list {
@@ -1366,9 +1380,15 @@ fieldset {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .footer .container {
     flex-direction: row;
     gap: 0;
+    align-items: baseline;
   }
 
   .footer-info {
@@ -1376,7 +1396,7 @@ fieldset {
   }
 
   .footer-info .logo {
-    padding-left: 0;
+    text-align: start;
   }
 
   .social-links {
@@ -1404,7 +1424,6 @@ fieldset {
   .modal {
     width: 408px;
     height: 623px;
-    transform: translate(-50%, -50%);
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -1417,20 +1436,20 @@ fieldset {
     margin-left: 96px;
   }
 
-  .privacy-policy {
-    margin-left: 0;
+  .mobile-overlay {
+    display: none;
   }
-}
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-main {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/office-img@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-main {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-img@2x.jpg);
+    }
   }
 }
